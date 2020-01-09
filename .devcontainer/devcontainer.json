@@ -2,7 +2,7 @@
 	"name": "vscode-dind",
 	"dockerFile": "Dockerfile",
 	"mounts": [ "source=/var/run/docker.sock,target=/var/run/docker.sock,type=bind" ],
-	"workspaceMount": "source=${localenv:PWD},target=/workspace,type=bind,consistency=cached",
+	"workspaceMount": "source=${PWD},target=/workspace,type=bind,consistency=cached",
 
 	// Use 'settings' to set *default* container specific settings.json values on container create. 
 	// You can edit these settings after create using File > Preferences > Settings > Remote.
